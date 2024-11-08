@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "Feather Bold";
+    src: url("https://db.onlinewebfonts.com/t/14936bb7a4b6575fd2eee80a3ab52cc2.eot");
+    src: url("https://db.onlinewebfonts.com/t/14936bb7a4b6575fd2eee80a3ab52cc2.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/14936bb7a4b6575fd2eee80a3ab52cc2.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/14936bb7a4b6575fd2eee80a3ab52cc2.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/14936bb7a4b6575fd2eee80a3ab52cc2.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/14936bb7a4b6575fd2eee80a3ab52cc2.svg#Feather Bold")format("svg");
+}
+.navbaring {
+    font-family: "Nunito", sans-serif;
+    font-size:35px;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color:white;
+}
+h1 {
+    font-family: "Feather Bold";
+    text-align: center;
+    font-size: 90px;
+}
+.jumbotron {
+    background-color:#ce82ff;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+
+}
+.jbt1{
+    background-color:#ff4b4b;
+}
+.jbt2{
+    background-color:#ff9600;
+}
+.bgr {
+    background-color:#ce82ff
+}
+.homelogosize{
+    height:120px;
+}
+img {
+    height:80px;
+}
+.actived {
+    color:#58cc02;
+}
+.nav-link:hover {
+    color: #89e219;
+}
+p {
+    font-family: "Nunito", sans-serif;
+    font-size:25px;
+    font-weight: 800;
+    color:#4b4b4b;
+    text-align: center;
+}
+h2 {
+    font-family: "Nunito", sans-serif;
+    font-size:25px;
+    text-align: center;
+    font-weight: 800;
+    color:#4b4b4b;
+}
+.duo-watching {
+    height:250px;
+}
+.btn-duo {
+    background-color:#58cc02;
+    font-family: "Feather Bold";
+    color:#ffffff;
+}
+.btn-duo:hover { 
+    background-color: #89e219;
+    color: #fff;
+}
+#kawaii {
+    height:200px;
+}
+.stare{
+    height:280px;
+}

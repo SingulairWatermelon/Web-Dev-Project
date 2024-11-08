@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md bgr">
+
+    <div class="container-fluid ">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link navbaring homelogotext" href="index.html"><img class="homelogosize hover-image" id="hoverImage" src="DuoHappyJump.svg"></a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link navbaring actived" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbaring" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbaring" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+  <div class="jumbotron text-white">
+
+    <h1>Duolingo</h1>
+  </div>
+  <div class="container">
+    <h2>
+      Welcome to the enchanting world of language learning with Duo! From exploring new cultures to unlocking countless opportunities, the journey of mastering a new language is both exciting and rewarding. Duo is here to be your steadfast companion, guiding you through fun and interactive lessons designed to keep you engaged and motivated. Whether you're starting from scratch or brushing up on your skills, Duo's got your back. Ready to embark on your linguistic adventure?
+    </h2>
+  </div>
+  <div class="container d-flex justify-content-center">
+    <a href="https://www.duolingo.com/register" type="button" class="btn btn-duo" style="--bs-btn-padding-y: 1rem; --bs-btn-padding-x: 2.5rem; --bs-btn-font-size: 3rem;">Start learning with Duo</a>
+  </div>
+  <div class="container">
+    <h2>
+      We're watching... 
+    </h2>
+  </div>
+  <div class="d-flex justify-content-center">
+    <img class="stare" src="DuoStare.svg">
+  </div>
+  <script>
+    const hoverNavItem = document.getElementById('hoverImage');
+    let images = ['DuoHappyJump.svg', 'DuoHappyJumpFlap.svg'];
+    let currentImageIndex = 0;
+    let interval;
+
+    hoverNavItem.addEventListener('mouseover', () => {
+      interval = setInterval(() => {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        hoverNavItem.src = images[currentImageIndex];
+      }, 100); // Change image every 500 milliseconds
+    });
+
+    hoverNavItem.addEventListener('mouseout', () => {
+      clearInterval(interval);
+      hoverNavItem.src = images[0]; // Reset to the first image when mouse is out
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+  
+  </html>
